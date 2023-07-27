@@ -12,21 +12,16 @@
 /* Header */
 
 .nav-masthead .nav-link {
-  padding: .25rem 0;
   font-weight: 700;
   color: rgba(255, 255, 255, .5);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
-  transition: 0.3s;
+  transition: 0.3s; 
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
   border-bottom-color: #F27777;
-}
-
-.nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
 }
 
 .nav-masthead .active {
@@ -36,6 +31,14 @@
 
 .nav-link:hover {
   color: #fff;
+}
+
+.navbar-toggler-icon {
+  color: #fff !important;
+}
+
+.navbar {
+  padding-right: 25%;
 }
 
 /*
@@ -130,10 +133,6 @@ html * {
   padding-top: 20vh;
 }
 
-.navbar {
-  padding: 10px 50%;
-}
-
 .project-icon {
   width: 30px;
   height: 30px;
@@ -158,10 +157,6 @@ html * {
   height: 15px;
 }
 
-.skills-card-wrapper {
-  margin: 0px 120px;
-}
-
 .skills-title {
   color: #fff;
   margin: 0px 0px;
@@ -183,14 +178,5 @@ html * {
 }
 
 .copyright-wrapper {
-  margin: 30px 5px;
-}
-
-.test-wrapper {
-  margin: 0px 250px;
-}
-
-.carousel-inner {
-  margin: 0px 0px;
-  padding: 0px 0px;;
+  margin-right: 5px;
 }
