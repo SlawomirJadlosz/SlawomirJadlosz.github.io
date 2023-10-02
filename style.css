@@ -1,30 +1,42 @@
-/* Globals */
-
-/* --- Custom default button --- */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color:#fff;
-  border-color: #F27777;
-  text-shadow: none; /* Prevent inheritance from `body` */
+/* Set global settings */
+body {
+    background-color: #212529;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-/* Header */
-
-.nav-masthead .nav-link {
-  font-weight: 700;
-  color: rgba(255, 255, 255, .5);
-  background-color: transparent;
-  border-bottom: .25rem solid transparent;
-  transition: 0.3s; 
+footer {
+    color: #ffffff80;
 }
 
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
+.navbar{
+    padding: 0 40vh;
+    margin: 0 40vh;
+}
+    
+/* Set full-screen height for sections */
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Customize navbar */
+.navbar-nav, .nav-link {
+    font-weight: 700;
+    color: #ffffff80;
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+    transition: 0.3s; 
+}
+
+.nav-link:hover,
+.nav-link:focus {
   border-bottom-color: #F27777;
 }
 
-.nav-masthead .active {
+.active {
   color: #fff;
   border-bottom-color: #fff;
 }
@@ -41,142 +53,185 @@
   padding-right: 25%;
 }
 
-/*
- * My styling
- */
-
-html * {
-  font-family: 'Courier New', Courier, monospace;
-}
+/* Customize text pieces */
+.header {
+    font-weight: 600;
+    padding-bottom: 70px;
+    margin: 0px 0px;
+  }
 
 .caption {
-  color: #F27777;
-  font-size: 12px;
-  margin: 0px 0px;
+    color: #F27777;
+    font-size: 12px;
+    margin: 0px 0px;
 }
 
-.header {
-  font-weight: 600;
-  padding-bottom: 70px;
-  margin: 0px 0px;
+/* Customize the size of the images */
+.my-photo {
+    max-width: 80px;
+    height: auto;
 }
 
-.skills {
-  width: 100%;
-  max-width: 300px;
-  padding: 0 10px;
+.contact-photo {
+    max-width: 110px;
+    height: auto;
 }
 
-.skill-name {
-  font-size: 14px;
-  font-weight: 500;
-  color: #fff;
-  margin: 5px 0px;
+.dev-icon {
+    fill: #fff;
+    max-width: 24px;
+    height: auto;
 }
 
-.skill-bar {
-  height: 7px;
-  background: #4e4e4e69;
-  border-radius: 3px;
+.project-icon, .skills-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-.skill-per {
-  height: 7px;
-  background: #f27777;
-  border-radius: 3px;
-  position: relative;
-  animation: fillBars 5s 1;
+.contact-icon {
+    max-width: 50px;
+    height: auto;
 }
 
-@keyframes fillBars {
-  from {
-    width: 0;
-  } to {
-    width: 100%;
-  }
+/* Customize buttons */
+.btn-my-skills,
+.btn-my-skills:focus {
+    color: #ffffff80;
+    background-color: #212529;
+    border-color: #F27777;
+    text-shadow: none; /* Prevent inheritance from `body` */
 }
 
-.skill-image {
-  margin-right: 5px;
+.btn-my-skills:hover {
+    color: #212529;
+    background-color: #F27777;
+    border-color: #212529;
+    text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+/* Customize cards */
+.card {
+    color: #fff;
 }
 
 .card-title {
-  font-weight: 700;
+    font-weight: 700;
+}
+
+.card-description {
+    font-size: 13px;
 }
 
 .card-text {
-  font-size: 12px;
-  text-align: justify;
+    font-size: 13px;
+    text-align: justify;
 }
 
+.border-start {
+    border-color: #F27777 !important;
+}
+  
 .about-me {
-  color: #fff;
-  margin-top: 20px;
-  line-height: 20px;
+    color: #fff;
+    margin-top: 20px;
+    line-height: 20px;
 }
 
 .about-me-title {
-  color: #fff;
-}
-  
-.border-start {
-  border-color: #F27777 !important;
+    color: #fff;
+    margin-top: 12px;
 }
 
-.border-top {
-  border-color: rgba(255, 255, 255, .5) !important;
-}
 
-.section-wrapper {
-  min-height: 100vh;
-  height: 100%;
-  padding-top: 20vh;
-}
-
-.project-icon {
-  width: 30px;
-  height: 30px;
-}
-
-.skills-icon {
-  width: 45px;
-  height: 45px;
-  padding: 2px 2px;
-  margin-left: 35px;
-  margin-right: 15px;
-}
-
-.footer-icon {
-  width: 35px;
-  height: 35px;
-  margin: 30px 5px;
-}
-
-.copyright-icon {
-  width: 15px;
-  height: 15px;
-}
-
-.skills-title {
-  color: #fff;
-  margin: 0px 0px;
-  padding: 10px 0px;
+/* Customize skill bars */
+.skills {
+    width: 100%;
+    max-width: 300px;
+    padding: 0 10px;
 }
 
 .skills-description {
-  color: #fff;
-  padding-top: 10px;
-  margin: 0px 25px;
+    color: #fff;
+    padding-top: 10px;
+  }
+  
+.skill-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    margin: 5px 0px;
+}
+  
+.skill-bar {
+    height: 7px;
+    background: #4e4e4e69;
+    border-radius: 3px;
+}
+  
+.skill-per {
+    height: 7px;
+    background: #f27777;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 5s 1;
 }
 
 .skill-bars-wrapper {
-  margin: 50px 0px;
+    margin: 50px 0px;
+}
+  
+@keyframes fillBars {
+    from {
+      width: 0;
+    } to {
+      width: 100%;
+    }
 }
 
-.copyright {
-  color: rgba(255, 255, 255, .5);
+/* Customize contact */
+  
+.contact-name {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
-.copyright-wrapper {
-  margin-right: 5px;
+.contact-job {
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.circle-placeholder {
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-color: #F27777;
+    background-color: transparent; /* Circle background color (blue) */
+    border-radius: 50%; /* Make it a circle */
+    margin: 10px; /* Add margin for spacing */
+    display: inline-block; /* Keep them inline */
+    overflow: hidden;
+}
+
+.circle-placeholder img {
+    width: 100%; /* Make the image fill the circle */
+    height: 100%; /* Make the image fill the circle */
+    object-fit: scale-down; /* Preserve aspect ratio and cover the entire circle */
+}
+
+.circle-placeholder:hover {
+    color: #212529;
+    background-color: #F27777;
+    border-color: #212529;
+    text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+.self-description {
+    color: #ffffff80;
+    font-weight: 600;
 }

@@ -1,451 +1,536 @@
-<!doctype html>
-<html lang="en" class="h-100">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Slawomir Jadlosz">
-    <title>Slawomir Jadlosz · Portfolio</title>
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- Include Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <!-- Bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <!-- Font awesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
-  </head>
-  
-  <body class="text-white bg-dark">
-    <div class="container text-center">
-      <nav class="navbar navbar-expand-lg navbar-dark nav-masthead fixed-top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sławomir Jadłosz · Portfolio</title>
+    <!-- Add Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Add Custom CSS (if needed) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-          <!-- Toggle Button -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-start bg-dark sidebar" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header text-center">
-              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1">
-                <li class="nav-item">
-                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </nav>
+    </nav>
 
-        <!-- Hello section -->
-        <section class="section-wrapper" id="home">
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 offset-md-3">
-              <p class="caption">Hi, my name is</p>
-              <h2 class="header">Slawomir Jadlosz</h2>
-              <p>I am a Junior Full-Stack JAVA developer with Electrical Engineering background.</p>
-              <p>
-                <a href="#skills" class="btn btn-sm btn-secondary fw-bold bg-dark">My skills</a>
-              </p>
+    
+
+    <!-- Home Section -->
+    <section id="home" class="section text-white text-center py-5">
+        <div class="container">
+            <p class="caption">Hi, my name is</p>
+            <h1 class="header">Sławomir Jadłosz</h1>
+            <p  class="self-description">I am a Junior Java Developer with Electrical Engineering background.</p>
+            <a href="#skills" class="btn btn-sm btn-my-skills fw-bold">My Skills</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section d-flex align-items-center justify-content-center">
+        <div class="container-md">
+            <div class="text-center">
+                <p class="caption">Dive into</p>
+                <h1 class="header">My Story</h1>
             </div>
-          </div>
-        </section>
-
-        <!-- About me section -->
-        <section class="section-wrapper" id="about">
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 offset-md-3">
-              <p class="caption">Dive into</p>
-              <h2 class="header">My Story</h2>
-              <div class="row">
-                <div class="col">
-                  <div class="card ms-3 text-start border-start border-0 rounded-0 bg-transparent">
-                    <div class="card-body ms-3">
-                      <div class="row">
-                        <div class="col-2">
-                          <img src="/images/myPhoto.png" class="rounded-circle img-responsive img-fluid" alt="My photo">
+            <div class="row">
+                <div class="col-md-7 mx-auto">
+                    <div class="card ms-3 text-start border-start border-0 rounded-0 bg-transparent">
+                        <div class="card-body ms-3">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="/images/myPhoto.png" class="rounded-circle my-photo" alt="My Photo">
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title about-me-title">Sławomir Jadłosz</h5>
+                                    <span class="card-text about-me-title">Junior Java Developer</span>
+                                </div>
+                            </div>
+                            <p class="card-text about-me">I graduated from Wroclaw University of Technology with B.S.
+                                and M.S. in Electrical Engineering. My academic education was enriched by one-year stay
+                                at Universite de Llle, France
+                                where I studied Electrical Engineering and Industrial Data Processing. I am therefore
+                                capable of speaking English, French and Polish. My first professional experience was
+                                focuced around
+                                Lighting Design and Electrical Engineering where apart from technical skills I also
+                                gained experience in communication and project management. Being constantly intrigued by
+                                technology
+                                I decided to pivot to IT industry focusing around JAVA and ReactJS.
+                            </p>
                         </div>
-                        <div class="col-10">
-                          <h5 class="card-title about-me-title">Slawomir Jadlosz</h5>
-                          <p class="card-text about-me-title">Junior Full-Stack Developer</p>
-                        </div>
-                      </div>
-                      <p class="card-text about-me">I graduated from Wroclaw University of Technology with B.S. and M.S. in Electrical Engineering. My academic education was enriched by one-year stay at Universite de Llle, France
-                        where I studied Electrical Engineering and Industrial Data Processing. I am therefore capable of speaking English, French and Polish. My first professional experience was focuced around 
-                        Lighting Design and Electrical Engineering where apart from technical skills I also gained experience in communication and project management. Being constantly intrigued by technology 
-                        I decided to pivot to IT industry focusing around JAVA and ReactJS.  
-                      </p>
                     </div>
-                  </div>
-                </div>  
-              </div>
+                </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Skills section -->
-        <section class="section-wrapper" id="skills">
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 offset-md-3">
-              <p class="caption">Consider</p>
-              <h2 class="header">My Skills</h2>
-              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <!-- Skills Section -->
+    <section id="skills" class="section d-flex align-items-center justify-content-center">
+        <div class="container-md">
+            <div class="text-center">
+                <p class="caption">Consider my</p>
+                <h1 class="header">Skills</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-7 mx-auto">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <!-- Programming Skills -->
+                            <div class="carousel-item active">
+                                <div class="card ms-3 text-start border-start border-0 rounded-0 bg-transparent">
+                                    <div class="card-body ms-3">
+                                        <div class="row mx-2">
+                                            <div class="col-auto">
+                                                <img src="/images/coding.svg" class="project-icon" alt="My Photo">
+                                            </div>
+                                            <div class="col">
+                                                <h5 class="card-title about-me-title d-inline ms-4">Programming</h5>
+                                            </div>
+                                            <p class="card-text about-me-title">1+ year of experience in software developement practicing Agile. Mainly focused on
+                                                backend enterprise applications.</p>
+                                        </div>
+                                        <div class="row skill-bars-wrapper">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                <div class="skills">
+                                                    <div class="skill">
+                                                        <div class="skill-name">JAVA</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="60%" style="max-width: 60%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">SPRINGBOOT</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="40%" style="max-width: 40%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">HIBERNATE</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="40%" style="max-width: 40%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">SQL</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="25%" style="max-width: 25%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                <div class="skills">
+                                                    <div class="skill">
+                                                        <div class="skill-name">REACT JS</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="60%" style="max-width: 60%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">ANGULAR</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="25%" style="max-width: 25%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">CSS</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="40%" style="max-width: 40%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">HTML</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="40%" style="max-width: 40%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Electrical Engineering Skills -->
+                            <div class="carousel-item">
+                                <div class="card ms-3 text-start border-start border-0 rounded-0 bg-transparent">
+                                    <div class="card-body ms-3">
+                                        <div class="row mx-2">
+                                            <div class="col-auto">
+                                                <img src="/images/lightning.svg" class="project-icon" alt="Electrical Engineering icon">
+                                            </div>
+                                            <div class="col">
+                                                <h5 class="card-title about-me-title d-inline ms-4">Electrical Engineering</h5>
+                                            </div>
+                                            <p class="card-text about-me-title">5+ years of expierience in Lighting Design for industry. Strong and
+                                                versatile knowledge about lighting calculations and 3d modelling in DialuxEvo.</p>
+                                        </div>
+                                        <div class="row skill-bars-wrapper">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                <div class="skills">
+                                                    <div class="skill">
+                                                        <div class="skill-name">Lighting Design</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="100%" style="max-width: 100%;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">Electrical Design</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="70%" style="max-width: 70%;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">Renewable Energy</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="50%" style="max-width: 50%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                <div class="skills">
+                                                    <div class="skill">
+                                                        <div class="skill-name">Dialux Evo, 4.13</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="100%" style="max-width: 100%;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">Revit</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="65%" style="max-width: 65%;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">Autocad</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="50%" style="max-width: 50%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Soft Skills -->
+                            <div class="carousel-item">
+                                <div class="card ms-3 text-start border-start border-0 rounded-0 bg-transparent">
+                                    <div class="card-body ms-3">
+                                        <div class="row mx-2">
+                                            <div class="col-auto">
+                                                <img src="/images/checklist.svg" class="project-icon" alt="Soft skills icon">
+                                            </div>
+                                            <div class="col">
+                                                <h5 class="card-title about-me-title d-inline ms-4">Soft Skills</h5>
+                                            </div>
+                                            <p class="card-text about-me-title">I strongly believe that proper communication and task distribution can
+                                                entirely change working engineering projects - regardless the industry.</p>
+                                        </div>
+                                        <div class="row skill-bars-wrapper">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                <div class="skills">
+                                                    <div class="skill">
+                                                        <div class="skill-name">Agile, Scrum, Kanban</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="85%" style="max-width: 85%;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">Trello</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="75%" style="max-width: 75%;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">Asana</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="50%" style="max-width: 50%;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">Reporting</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                <div class="skills">
+                                                    <div class="skill">
+                                                        <div class="skill-name">Communication</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="100%" style="max-width: 100%;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">Problem solving</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="100%" style="max-width: 100%;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">To do attitude</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="100%" style="max-width: 100%;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">Team player</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="85%" style="max-width: 85%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Languages -->
+                            <div class="carousel-item">
+                                <div class="card ms-3 text-start border-start border-0 rounded-0 bg-transparent">
+                                    <div class="card-body ms-3">
+                                        <div class="row mx-2">
+                                            <div class="col-auto">
+                                                <img src="/images/communication.svg" class="project-icon" alt="Soft skills icon">
+                                            </div>
+                                            <div class="col">
+                                                <h5 class="card-title about-me-title d-inline ms-4">Languages</h5>
+                                            </div>
+                                            <p class="card-text about-me-title">It is not only language but also
+                                                culture knowledge that makes a change.</p>
+                                        </div>
+                                        <div class="row skill-bars-wrapper">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                <div class="skills">
+                                                    <div class="skill">
+                                                        <div class="skill-name">English</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="95%" style="max-width: 95%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">French</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="75%" style="max-width: 75%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">Ukrainian</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="50%" style="max-width: 50%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                <div class="skills">
+                                                    <div class="skill">
+                                                        <div class="skill-name">Polish</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="100%" style="max-width: 100%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <div class="skill-name">Lemko</div>
+                                                        <div class="skill-bar">
+                                                            <div class="skill-per" per="100%" style="max-width: 100%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-inner">
-                  <!-- start of carousel inner -->
-                  <!-- Programming Skills -->
-                  <div class="carousel-item active">
-                    <div class="card text-start border-0 rounded-0 bg-transparent">
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-xs-10 col-sm-10 col-md-10">
-                            <img src="/images/coding.svg" class="skills-icon img-responsive img-fluid" alt="Coding icon">
-                            <h5 class="card-title d-inline skills-title">Programming</h5>
-                            <p class="card-text skills-description">1+ year of experience in software developement practicing Agile. Mainly focused on backend enterprise applications.</p>
-                          </div>
-                        </div>
-                        <div class="row skill-bars-wrapper">
-                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                            <div class="skills">
-                              <div class="skill">
-                                <div class="skill-name">JAVA</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="60%" style="max-width: 60%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section py-5">
+        <div class="container">
+            <div class="text-center">
+                <p class="caption">See my</p>
+                <h1 class="header">Projects</h1>
+            </div>
+            <div class="row">
+                <!-- My Stock Wallet -->
+                <div class="col-md-4 offset-md-2">
+                    <div class="card ms-3 text-start border-start border-0 rounded-0 bg-transparent">
+                        <div class="card-body ms-3">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="/images/graph.svg" class="project-icon" alt="My Photo">
                                 </div>
-                              </div>
-                              <div class="skill">
-                                <div class="skill-name">SPRINGBOOT</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="40%" style="max-width: 40%;"></div>
+                                <div class="col">
+                                    <h5 class="card-title about-me-title d-inline ms-3">My Stock Wallet</h5>
                                 </div>
-                              </div>
-                              <div class="skill">
-                                <div class="skill-name">HIBERNATE</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="40%" style="max-width: 40%;"></div>
-                                </div>
-                              </div>
-                              <div class="skill">
-                                <div class="skill-name">SQL</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="25%" style="max-width: 25%;"></div>
-                                </div>
-                              </div>
+                                <p class="card-text about-me-title">An app made to keep all the stock investments in one place.</p>
                             </div>
-                          </div>
-                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                            <div class="skills">
-                              <div class="skill">
-                                <div class="skill-name">REACT JS</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="60%" style="max-width: 60%;"></div>
-                                </div>
-                              </div>
-                              <div class="skill">
-                                <div class="skill-name">ANGULAR</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="25%" style="max-width: 25%;"></div>
-                                </div>
-                              </div>
-                              <div class="skill">
-                                <div class="skill-name">CSS</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="40%" style="max-width: 40%;"></div>
-                                </div>
-                              </div>
-                              <div class="skill">
-                                <div class="skill-name">HTML</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="40%" style="max-width: 40%;"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
                         </div>
-                      </div>
+                        <div class="card-footer ms-3 bg-transparent border-0">
+                            <small class="about-me">
+                              <img src="/images/java.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="JAVA" alt="JAVA icon">
+                              <img src="/images/springboot.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Spring Boot" alt="Spring Boot icon">
+                              <img src="/images/database.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="SQL" alt="Database icon">
+                              <img src="/images/hibernate.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Hibernate" alt="Hibernate icon">
+                              <img src="/images/react.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="ReactJS" alt="React icon">
+                            </small>
+                          </div>
                     </div>
-                  </div>
-                  <!-- Electrical Engineering Skills -->
-                  <div class="carousel-item">
-                    <div class="card text-start border-0 rounded-0 bg-transparent">
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-xs-10 col-sm-10 col-md-10">
-                            <img src="/images/lightning.svg" class="skills-icon img-responsive img-fluid" alt="Coding icon">
-                            <h5 class="card-title d-inline skills-title">Electrical Engineering</h5>
-                            <p class="card-text skills-description">5+ years of expierience in Lighting Design for industry. Strong and versatile knowledge about lighting calculations and 3d modelling in DialuxEvo.</p>
-                          </div>
-                        </div>
-                        <div class="row skill-bars-wrapper">
-                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                            <div class="skills">
-                              <div class="skill">
-                                <div class="skill-name">Lighting Design</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="100%" style="max-width: 100%;"></div>
-                                </div>
-                              </div>
-                              <div class="skill">
-                                <div class="skill-name">Electrical Design</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="70%" style="max-width: 70%;"></div>
-                                </div>
-                              </div>
-                              <div class="skill">
-                                <div class="skill-name">Renewable Energy</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="50%" style="max-width: 50%;"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                            <div class="skills">
-                            <div class="skill">
-                              <div class="skill-name">Dialux Evo, 4.13</div>
-                              <div class="skill-bar">
-                                <div class="skill-per" per="100%" style="max-width: 100%;"></div>
-                              </div>
-                            </div>
-                            <div class="skill">
-                              <div class="skill-name">Revit</div>
-                              <div class="skill-bar">
-                                <div class="skill-per" per="65%" style="max-width: 65%;"></div>
-                              </div>
-                            </div>
-                            <div class="skill">
-                              <div class="skill-name">Autocad</div>
-                              <div class="skill-bar">
-                                <div class="skill-per" per="50%" style="max-width: 50%;"></div>
-                              </div>
-                            </div>
-                          </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Soft Skills -->
-                  <div class="carousel-item">
-                    <div class="card text-start border-0 rounded-0 bg-transparent">
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-xs-10 col-sm-10 col-md-10">
-                            <img src="/images/checklist.svg" class="skills-icon img-responsive img-fluid" alt="Coding icon">
-                            <h5 class="card-title d-inline skills-title">Soft Skills</h5>
-                            <p class="card-text skills-description">I strongly believe that proper communication and task distribution can entirely change working engineering projects - regardless the industry.</p>
-                          </div>
-                        </div>
-                        <div class="row skill-bars-wrapper">
-                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                            <div class="skills">
-                              <div class="skill">
-                                <div class="skill-name">Agile, Scrum, Kanban</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="85%" style="max-width: 85%;"></div>
-                                </div>
-                              </div>
-                              <div class="skill">
-                                <div class="skill-name">Trello</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="75%" style="max-width: 75%;"></div>
-                                </div>
-                              </div>
-                              <div class="skill">
-                                <div class="skill-name">Asana</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="50%" style="max-width: 50%;"></div>
-                                </div>
-                              </div>
-                              <div class="skill">
-                                <div class="skill-name">Reporting</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="90%" style="max-width: 90%;"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                            <div class="skills">
-                              <div class="skill">
-                                <div class="skill-name">Communication</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="100%" style="max-width: 100%;"></div>
-                                </div>
-                              </div>
-                              <div class="skill">
-                                <div class="skill-name">Problem solving</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="100%" style="max-width: 100%;"></div>
-                                </div>
-                              </div>
-                              <div class="skill">
-                                <div class="skill-name">To do attitude</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="100%" style="max-width: 100%;"></div>
-                                </div>
-                              </div>
-                              <div class="skill">
-                                <div class="skill-name">Team player</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="85%" style="max-width: 85%;"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Language Skills -->
-                  <div class="carousel-item">
-                    <div class="card text-start border-0 rounded-0 bg-transparent">
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-xs-10 col-sm-10 col-md-10">
-                            <img src="/images/communication.svg" class="skills-icon img-responsive img-fluid" alt="Coding icon">
-                            <h5 class="card-title d-inline skills-title">Languages</h5>
-                            <p class="card-text skills-description">It is not only language but also culture knowledge that makes a change.</p>
-                          </div>
-                        </div>
-                        <div class="row skill-bars-wrapper">
-                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                            <div class="skills">
-                              <div class="skill">
-                                <div class="skill-name">English</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="95%" style="max-width: 95%;"></div>
-                                </div>
-                              </div>
-                              <div class="skill">
-                                <div class="skill-name">French</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="75%" style="max-width: 75%;"></div>
-                                </div>
-                              </div>
-                              <div class="skill">
-                                <div class="skill-name">Ukrainian</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="50%" style="max-width: 50%;"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                            <div class="skills">
-                              <div class="skill">
-                                <div class="skill-name">Polish</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="100%" style="max-width: 100%;"></div>
-                                </div>
-                              </div>
-                              <div class="skill">
-                                <div class="skill-name">Lemko</div>
-                                <div class="skill-bar">
-                                  <div class="skill-per" per="100%" style="max-width: 100%;"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end of carousel inner -->
                 </div>
-              </div>
-            </div> 
-          </div>
-        </section>
+                <div class="col-md-4">
+                    <div class="card ms-3 text-start border-start border-0 rounded-0 bg-transparent">
+                        <div class="card-body ms-3">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="/images/note.svg" class="project-icon" alt="My Photo">
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title about-me-title d-inline ms-3">Quick Note</h5>
+                                </div>
+                                <p class="card-text about-me-title">Easy and intuitive tool to memorise all the chores.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer ms-3 bg-transparent border-0">
+                            <small class="about-me">
+                              <img src="/images/java.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="JAVA" alt="JAVA icon">
+                              <img src="/images/springboot.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Spring Boot" alt="Spring Boot icon">
+                              <img src="/images/database.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="SQL" alt="Database icon">
+                              <img src="/images/hibernate.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Hibernate" alt="Hibernate icon">
+                              <img src="/images/react.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="ReactJS" alt="React icon">
+                            </small>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section py-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-3">
+                    <div class="card border-0 rounded-0 bg-transparent">
+                        <div class="card-body">
+                            <div class="row d-flex justify-content-center">
+                                <img src="/images/myPhoto.png" class="rounded-circle contact-photo" alt="My Photo">
+                            </div>
+                            <div class="row text-center">
+                                <p class="contact-name">Sławomir Jadłosz</p>
+                                <span class="contact-job">Junior Java Developer</span>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="circle-placeholder"><a href="https://pl.linkedin.com/in/s%C5%82awomirjad%C5%82osz"><img  src="/images/linkedin.svg" alt="LinkedIn icon"></a></div>
+                                <div class="circle-placeholder"><a href="https://slawomirjadlosz.github.io/"><img src="/images/github.svg" alt="LinkedIn icon"></a></div>
+                                <div class="circle-placeholder"><img src="/images/mail.svg" alt="LinkedIn icon" onclick="copyEmail()"></div>
+                                <div class="circle-placeholder"><a href="https://drive.google.com/file/d/1hmqA_InNNo6By8YHU5j4Vhu0se_Rsgmt/view?usp=sharing" download><img src="/images/attachement.svg" alt="Attachement icon"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer text-center py-3">
+        <div class="container">
+            <p>&copy; 2023 Sławomir Jadłosz · Software Developer · Portfolio</p>
+        </div>
+    </footer>
+
+    <!-- Add Bootstrap JS Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+        <script>
+            function copyEmail() {
+                // Get the email element's text
+                var emailText = "jadlosz@gmail.com";
         
-        <!-- Projects section -->
-        <section class="section-wrapper" id="projects">
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 offset-md-3">
-              <p class="caption">See my</p>
-              <h2 class="header">Projects</h2>
-              <div class="card-group">
-                <div class="card ms-3 text-start border-start border-0 rounded-0 bg-transparent">
-                  <div class="card-body ms-3">
-                    <div class="row">
-                      <div class="col-3">
-                        <img src="/images/graph.svg" class="img-responsive img-fluid project-icon" alt="...">
-                      </div>
-                      <div class="col-9">
-                        <h6 class="card-title about-me-title">My Stock Wallet</h6>
-                      </div>
-                    </div>
-                    <p class="card-text about-me">An app made to keep all the stock investments in one place.</p>
-                  </div>
-                  <div class="card-footer ms-3 bg-transparent border-0">
-                    <small class="about-me">
-                      <img src="/images/java.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="JAVA" alt="JAVA icon">
-                      <img src="/images/springboot.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Spring Boot" alt="Spring Boot icon">
-                      <img src="/images/database.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="SQL" alt="Database icon">
-                      <img src="/images/hibernate.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Hibernate" alt="Hibernate icon">
-                      <img src="/images/react.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="ReactJS" alt="React icon">
-                    </small>
-                  </div>
-                </div>
-                <div class="card ms-3 text-start border-start border-0 rounded-0 bg-transparent">
-                  <div class="card-body ms-3">
-                    <div class="row">
-                      <div class="col-3">
-                        <img src="/images/note.svg" class="project-icon img-responsive img-fluid" alt="...">
-                      </div>
-                      <div class="col-9">
-                        <h6 class="card-title about-me-title">Quick Note</h6>
-                      </div>
-                    </div>
-                    <p class="card-text about-me">Easy and intuitive tool to memorise all the chores.</p>
-                  </div>
-                  <div class="card-footer ms-3 bg-transparent border-0">
-                    <small class="about-me">
-                      <img src="/images/java.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="JAVA" alt="JAVA icon">
-                      <img src="/images/springboot.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Spring Boot" alt="Spring Boot icon">
-                      <img src="/images/database.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="SQL" alt="Database icon">
-                      <img src="/images/hibernate.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Hibernate" alt="Hibernate icon">
-                      <img src="/images/react.svg" class="technology-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="ReactJS" alt="React icon">
-                    </small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+                // Create a temporary input element
+                var tempInput = document.createElement("input");
+                tempInput.value = emailText;
+                document.body.appendChild(tempInput);
+        
+                // Select the text in the input element
+                tempInput.select();
+                tempInput.setSelectionRange(0, 99999); // For mobile devices
+        
+                // Copy the text to the clipboard
+                document.execCommand("copy");
+        
+                // Remove the temporary input element
+                document.body.removeChild(tempInput);
+        
+                // Show a message or perform any other action to indicate the email has been copied
+                alert("Email address copied to clipboard: " + emailText);
+            }
+        </script>
+</body>
 
-        <!-- Contact/footer section -->
-        <section id="contact">
-          <footer>
-            <div class="col-xs-12 col-sm-12 col-md-6 offset-md-3">
-              <div class="text-center">
-                <a href="https://pl.linkedin.com/in/s%C5%82awomirjad%C5%82osz"><img src="/images/linkedin.svg" class="footer-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn" alt="LinkedIn icon"></a>
-                <a href="https://slawomirjadlosz.github.io/"><img src="/images/github.svg" class="footer-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub" alt="GitHub icon"></a>
-                <a><img src="/images/mail.svg"  href="" class="footer-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="e-mail" alt="Email icon"></a>
-              </div>
-            </div>
-          </footer>
-        </section>
-    </div>
-  </body>
 </html>
