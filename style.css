@@ -90,13 +90,6 @@ footer {
     height: 100%;
 }
 
-.project-icon-lightning {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90%;
-}
-
 .contact-icon {
     max-width: 50px;
     height: auto;
